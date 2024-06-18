@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBS Test</title>
+    <link rel="stylesheet" href= 
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.css">
+</head>
+<body  onload="move();this.disabled='true'">
+    <header>
+        <nav> 
+            <div class="menu-icon">
+              <span class="fas fa-bars"></span>
+            </div>
+      
+            <div class="logo"><img src="./images/logo.png" alt="logo"></div>
+      
+            <div class="nav-items">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Product</a></li>           
+              <li><a href="#">Contact</a></li>
+            </div>
+      
+            <div class="search-icon">
+              <span class="fas fa-search"></span>
+            </div>
+      
+            <div class="cancel-icon">
+              <span class="fas fa-times"></span>
+            </div>
+      
+            <form action="#">
+              <input type="search" class="search-data" placeholder="Search" required>
+              <button type="submit" class="fas fa-search"></button>
+            </form>
+            <button class="btn btn-purple">Sign in</button>
+
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <img src="./images/sidenavicon.svg"> </span>
+
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#">Assessments</a>
+              <a href="#">Consulting</a>
+              <a href="#">Cloud Security</a>
+              <a href="#">Business Analytics</a>
+              <a href="#">MDR / SOC</a>
+           </div>
+          </nav> 
+    </header>
+    <section class="hero">
+      <div class="hero_heding">
+        <h1>Secure Digital Transformation</h1>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="abouttext">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, cosectetur adipiscing elit. Fusce placerat, dolor in imperdiet tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, cosectetur adipiscing elit. Fusce placerat, dolor in imperdiet tempor.</p>
+          <button class="btn btn-purple">About Us</button>
+        </div>
+        <div class="aboutcard">
+          <div class="card">
+            <div class="main_product">
+              <div class="best_product">
+                <h3>Our Best Product</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur piscing elit lorem ipsum dolor sit amet, cosectetur cing elit. Fusce placerat, dolor in imperdiet tempor.</p>
+              </div>
+              <div class="ratings">
+                <p>Customer Rating</p>
+                <h2>8 / <span style="color:#000;">10</span></h2>
+              </div>
+          </div>
+          <div class="progress_main">
+            <div class="progress_grey">
+              <div id="myBar" class=" progress_yellow" style="height:10px;width:0%"> 
+              </div>  
+            </div>
+            <div class="progress_persent"> <span style="padding-left: 20px;"> 75%</span> </div>
+          </div>
+           
+            <!-- <progress id="myBar" value="75" max="100">  </progress>75%  -->
+        <div class="upcoming_product">
+          <p>Our Upcoming Product</p>
+          <button class="btn btn-gray">Product 01</button><button class="btn btn-gray">Product 02</button><button class="btn btn-gray">Product 03</button>
+        </div>  
+        <div class="know_more_btn">
+          <a href="#">Know More </a> <img src="./images/Arrow_right.svg" alt="">
+        </div>
+            
+        </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="servic_img">
+          <img src="./images/services_img.png" alt="">
+        </div>
+        <div class="servic_text">
+          <h2>Services</h2>
+          <h4>Customer obsessed, solving complex cyber threats</h4>
+          <p>As a leader in managing cyber risk, we bring you the latest from the complex, ever-evolving and challenging online threat environment with the insights to inspire and the expertise to act.</p>
+        </div>
+      </div>
+    </section>
+    <section class="carouselsec">
+      <div class="carouselslider">
+        <div class="slide-container swiper">
+          <div class="slide-content">
+              <div class=" card-wrapper swiper-wrapper">
+                  <!--CARD 1-->
+                
+                  <div class="card swiper-slide">
+                    <p class="slide_count">01</p>                                                                      
+                      <div class="card-content">
+                        <img class="card-img" src="./images/carousel_icon1.svg" alt=""> 
+                          <h2 class="name">Prem Bdr. Chand</h2>
+                          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                              eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                              expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                         
+                      </div>
+                      <div class="footer">
+                        <div class="footer_icon">
+                          <img src="./images/carousel_icon2.svg">
+                        </div>
+                        <div class="footer_link">
+                          <a href="">Know More <img src="./images/cardarrow.png"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <!--CARD 2-->
+                  
+                  <div class="card swiper-slide">
+                    <p class="slide_count">02</p>                                                                      
+                      <div class="card-content">
+                        <img class="card-img" src="./images/carousel_icon1.svg" alt=""> 
+                          <h2 class="name">Prem Bdr. Chand</h2>
+                          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                              eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                              expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                         
+                      </div>
+                      <div class="footer">
+                        <div class="footer_icon">
+                          <img src="./images/carousel_icon3.svg"> <img src="./images/carousel_icon4.svg">
+                        </div>
+                        <div class="footer_link">
+                          <a href="">Know More <img src="./images/cardarrow.png"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <!--CARD 3-->
+                  
+                  <div class="card swiper-slide">
+                    <p class="slide_count">03</p>                                                                      
+                      <div class="card-content">
+                        <img class="card-img" src="./images/carousel_icon1.svg" alt=""> 
+                          <h2 class="name">Prem Bdr. Chand</h2>
+                          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                              eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                              expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                         
+                      </div>
+                      <div class="footer">
+                        <div class="footer_icon">
+                          <img src="./images/carousel_icon2.svg">
+                        </div>
+                        <div class="footer_link">
+                          <a href="">Know More <img src="./images/cardarrow.png"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <!--CARD 4-->
+                 
+                  <div class="card swiper-slide">
+                    <p class="slide_count">04</p>                                                                      
+                      <div class="card-content">
+                        <img class="card-img" src="./images/carousel_icon1.svg" alt=""> 
+                          <h2 class="name">Prem Bdr. Chand</h2>
+                          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                              eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                              expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                         
+                      </div>
+                      <div class="footer">
+                        <div class="footer_icon">
+                          <img src="./images/carousel_icon2.svg">
+                        </div>
+                        <div class="footer_link">
+                          <a href="">Know More <img src="./images/cardarrow.png"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <!--CARD 5-->
+                  
+                  <div class="card swiper-slide">
+                    <p class="slide_count">05</p>                                                                      
+                      <div class="card-content">
+                        <img class="card-img" src="./images/carousel_icon1.svg" alt=""> 
+                          <h2 class="name">Prem Bdr. Chand</h2>
+                          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                              eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                              expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                         
+                      </div>
+                      <div class="footer">
+                        <div class="footer_icon">
+                          <img src="./images/carousel_icon2.svg">
+                        </div>
+                        <div class="footer_link">
+                          <a href="">Know More <img src="./images/cardarrow.png"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <!--CARD 6-->
+                  
+                  <div class="card swiper-slide">
+                    <p class="slide_count">06</p>                                                                      
+                      <div class="card-content">
+                        <img class="card-img" src="./images/carousel_icon1.svg" alt=""> 
+                          <h2 class="name">Prem Bdr. Chand</h2>
+                          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                              eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                              expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                         
+                      </div>
+                      <div class="footer">
+                        <div class="footer_icon">
+                          <img src="./images/carousel_icon2.svg">
+                        </div>
+                        <div class="footer_link">
+                          <a href="">Know More <img src="./images/cardarrow.png"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <!--CARD 7-->
+                  
+                  <div class="card swiper-slide">
+                    <p class="slide_count">07</p>                                                                      
+                      <div class="card-content">
+                        <img class="card-img" src="./images/carousel_icon1.svg" alt=""> 
+                          <h2 class="name">Prem Bdr. Chand</h2>
+                          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                              eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                              expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                         
+                      </div>
+                      <div class="footer">
+                        <div class="footer_icon">
+                          <img src="./images/carousel_icon2.svg">
+                        </div>
+                        <div class="footer_link">
+                          <a href="">Know More <img src="./images/cardarrow.png"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <!--CARD 8-->
+                  
+                  <div class="card swiper-slide">
+                    <p class="slide_count">08</p>                                                                      
+                      <div class="card-content">
+                        <img class="card-img" src="./images/carousel_icon1.svg" alt=""> 
+                          <h2 class="name">Prem Bdr. Chand</h2>
+                          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                              eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                              expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                         
+                      </div>
+                      <div class="footer">
+                        <div class="footer_icon">
+                          <img src="./images/carousel_icon2.svg">
+                        </div>
+                        <div class="footer_link">
+                          <a href="">Know More <img src="./images/cardarrow.png"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <!--CARD 9-->
+                  
+                  <div class="card swiper-slide">
+                    <p class="slide_count">09</p>                                                                      
+                      <div class="card-content">
+                        <img class="card-img" src="./images/carousel_icon1.svg" alt=""> 
+                          <h2 class="name">Prem Bdr. Chand</h2>
+                          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                              eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                              expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                         
+                      </div>
+                      <div class="footer">
+                        <div class="footer_icon">
+                          <img src="../images/carousel_icon2.svg">
+                        </div>
+                        <div class="footer_link">
+                          <a href="">Know More <img src="./images/cardarrow.png"></a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"><img src="./images/rightarrow.png"></div>
+          <div class="swiper-button-prev swiper-navBtn"><img src="./images/leftarrow.png"></div>
+        
+      </div>
+      </div>
+      <div class="container">
+        <div class="carousel_content">
+          <p>Lorem ipsum dolor sit amet, consec iscing lorem ipsum dolor sit amet, costetur piscing elit. Fusce placerat, dolor in diet </p>
+        </div>
+      </div>    
+    </section>
+    <section class="feature">
+      <div class="container_feature">
+        <h3>Feature</h3>
+        <div class="feature__main">
+          <div class="feature1">
+            <div class="feature_content">
+              <div class="feature_icon"><img src="./images/icon1.svg"></div>
+              <div class="feature_text">
+                <h2>Vendor Neutral</h2>
+                <p>Our consultants deliver vendor neutral recommendations and trainings</p>
+              </div>
+            </div>
+            <div class="feature_content">
+              <div class="feature_icon"><img src="./images/icon2.svg"></div>
+              <div class="feature_text">
+                <h2>Quality Deliverables</h2>
+                <p>Services are delivered adhering to ISO 27001 & CREST standards</p>
+              </div>
+            </div>
+            <div class="feature_content">
+              <div class="feature_icon"><img src="./images/icon3.svg"></div>
+              <div class="feature_text">
+                <h2>Detection & Response</h2>
+                <p>24/7 Managed detection, threat hunting, and response delivered by experts</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature2"><img src="./images/feature.png"></div>
+          <div class="feature3">
+            <div class="feature_content">
+              <div class="feature_icon"><img src="./images/icon4.svg"></div>
+              <div class="feature_text">
+                <h2>Seasoned Experts</h2>
+                <p>National and International award winning seasoned security professionals</p>
+              </div>
+            </div>
+            <div class="feature_content">
+              <div class="feature_icon"><img src="./images/icon5.svg"></div>
+              <div class="feature_text">
+                <h2>Proactive Consulting</h2>
+                <p>Services based on threat intelligence, AI, risk profile and frameworks</p>
+              </div>
+            </div>
+            <div class="feature_content">
+              <div class="feature_icon"><img src="./images/icon6.svg"></div>
+              <div class="feature_text">
+                <h2>Certification</h2>
+                <p>ISO 17024 audited and NICE framework mapped trainings and certifications</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <h1>A National and International Award winning Company</h1>
+      <div class="container_award">
+        <div class="award1">
+         
+                                                                           
+              <div class="card-content">
+                <img class="card-img" src="./images/award2.png" alt=""> 
+                  <h2 class="name">Kalam</h2>
+                  <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                      eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                      expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                 
+              </div>
+              
+          
+        </div>
+        <div class="award2">
+         
+                                                                               
+              <div class="card-content">
+              
+                  <h2 class="name">Cybertronium</h2>
+                  <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                      eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                      expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                 
+              </div>
+             
+         
+        </div>
+        <div class="award3">
+          
+                                                                                
+              <div class="card-content">
+                <img class="card-img" src="./images/award1.png" alt=""> 
+                  <h2 class="name">Kalam</h2>
+                  <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                      eaque, minus at in perferendis rerum nobis accusamus eligendi aperiam neque delectus
+                      expedita repudiandae eveniet velit. Culpa reprehenderit atque labore tenetur?</p>
+                 
+              </div>
+             
+          
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="row">
+        <div class="map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15123.287255154442!2d73.78308580000001!3d18.62708265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1718423488936!5m2!1sen!2sin" width="100%" height="720" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-form">
+             <h1>Get In Touch</h1>
+             <h3>Every organization have Cybersecurity challenges</h3>
+             <p>Curious to how we can make your business secure? Or do you have a specific question? Let us know and we will get in touch soon.</p>
+                <form method="post" name="contact_form" action="/contact-form-handler.php">
+                  <div class="formfiled">
+                    <input type="text" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="formfiled">
+                    <input type="email" name="email" placeholder="Email" required>
+                  </div>
+                  <div class="formfiled">
+                    <input type="text" name="companyname" placeholder="Company Name">
+                  </div>
+                  <div class="formfiled">
+                    <textarea name="message" placeholder="Enquiry"></textarea>
+                  </div>
+                  <div class="submitbtn">
+                    <input class="submit" type="submit" value="Submit">
+                  </div>
+                 
+                  </form>	
+              
+              
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+   
+      <div class="container">
+       <div class="footer_row">
+         <div class="footer-col">
+           <img src="./images/footerlogo.png">
+         </div>
+         <div class="footer-col">
+           <h4>Menu</h4>
+           <ul>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Services</a></li>
+             <li><a href="#">Training</a></li>
+             <li><a href="#">Blog</a></li>
+             <li><a href="#">Contact</a></li>         
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>Service</h4>
+           <ul>
+             <li><a href="#">Assessments</a></li>
+             <li><a href="#">Consulting</a></li>
+             <li><a href="#">Cloud Security</a></li>
+             <li><a href="#">Business Analytics</a></li>
+             <li><a href="#">MDR / SOC</a></li>     
+           </ul>
+         </div>
+         <div class="footer-col">
+           <div class="social-links">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+           </div>
+         </div>
+       </div>
+      
+      </div>
+     
+        <div class="footermain">
+          <div class="footercopy"><p>Copyright © 2024Cybertonium. All Rights Reserved.</p></div>
+          <div class="footerterms"><a href="#">Terms of Use</a> <a href="#">Privacy Policy</a></div>
+        </div>
+     
+    
+   </footer>
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
